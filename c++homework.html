@@ -1,0 +1,928 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   C++大作业2017
+  </title>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/github.min.css" rel="stylesheet"/>
+  <style type="text/css">
+   h1,h2{border-bottom:1px solid}html a:hover,html pre{background-color:#eee8d5}blockquote,body,h1,h2,h3,h4,h5,h6,html,img,li,ol,p,ul{margin:0;padding:0;font:inherit;vertical-align:baseline}img,ol,p,pre,ul{margin-bottom:20px}html *{font-family:ff-din-web-pro-1,ff-din-web-pro-2,sans-serif;font-size:16px;line-height:19.2px;color-profile:sRGB;color:#657b83}body{margin:40px 70px}p{font-weight:lighter}strong{font-weight:700}ol,ul{margin-left:2em}ol ol,ol ul,ul ol,ul ul{margin-top:10px}li{margin-bottom:3px}h1,h2,h3,h4,h5,h6{font-weight:lighter;text-transform:capitalize;margin-top:20px;margin-bottom:10px}.hljs-strong,h1,mark{font-weight:700}h1,h2{font-size:24.62px;line-height:29.55px}h3{font-size:23.44px;line-height:28.13px}h4,h5,h6{font-size:22.16px;line-height:26.59px}h1 img,h2 img,h3 img,h4 img,h5 img,h6 img,p img{margin-bottom:0}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word;padding:15px}code,pre{font-family:monospace}blockquote{border-left:4px solid;padding:0 15px}blockquote>:first-child{margin-top:0}blockquote>:last-child{margin-bottom:15px}h1{text-transform:uppercase}h3,h4,h5,h6{border-bottom:none}html body{background-color:#fdf6e3}html h1,html h2,html h3,html h4,html h5,html h6{border-color:#657b83}html pre{color:#586e75}html a,html a:active,html a:visited,html code.url,html h1,html h2,html h3,html h4,html h5,html h6{color:#b58900}@media print{body{margin:0}*{color:#000!important}}table{border-collapse:collapse}td,th{border:1px solid #657b83;padding:.5rem;text-align:left}.hljs{display:block;overflow-x:auto;padding:.5em;background:#fdf6e3;color:#657b83}.hljs-comment,.hljs-quote{color:#93a1a1}.hljs-addition,.hljs-keyword,.hljs-selector-tag{color:#859900}.hljs-doctag,.hljs-literal,.hljs-meta .hljs-meta-string,.hljs-number,.hljs-regexp,.hljs-string{color:#2aa198}.hljs-name,.hljs-section,.hljs-selector-class,.hljs-selector-id,.hljs-title{color:#268bd2}.hljs-attr,.hljs-attribute,.hljs-class .hljs-title,.hljs-template-variable,.hljs-type,.hljs-variable{color:#b58900}.hljs-bullet,.hljs-link,.hljs-meta,.hljs-meta .hljs-keyword,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-subst,.hljs-symbol{color:#cb4b16}.hljs-built_in,.hljs-deletion{color:#dc322f}.hljs-formula{background:#eee8d5}.hljs-emphasis{font-style:italic}
+  </style>
+ </head>
+ <body>
+  <p>
+   <br/>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <center>
+   <h3 id="c">
+    “C++程序设计与训练”课程大作业项目报告
+   </h3>
+   <p>
+   </p>
+   <p>
+    <br/>
+   </p>
+   <p>
+   </p>
+   <h4 id="_1">
+    项目名称：餐厅服务与管理系统
+   </h4>
+   <p>
+   </p>
+  </center>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <center>
+   <h4 id="_2">
+    姓名:马天云
+   </h4>
+   <h4 id="2016011417">
+    学号:2016011417
+   </h4>
+   <h4 id="62">
+    班级:自62
+   </h4>
+   <h4 id="2017917">
+    时间:2017.9.17
+   </h4>
+   <p>
+   </p>
+  </center>
+  <br/>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+   <br/>
+  </p>
+  <p>
+  </p>
+  <h1 id="_3">
+  </h1>
+  <p>
+   <strong>
+    目录
+   </strong>
+  </p>
+  <ul>
+   <li>
+    <a href="#1">
+     1.系统功能设计
+    </a>
+    <ul>
+     <li>
+      <a href="#1.1">
+       1.1 总体功能设计
+      </a>
+      <ul>
+       <li>
+        <a href="#1.1.1">
+         登录界面
+        </a>
+       </li>
+       <li>
+        <a href="#1.1.2">
+         系统管理员界面
+        </a>
+       </li>
+       <li>
+        <a href="#1.1.3">
+         经理界面
+        </a>
+       </li>
+       <li>
+        <a href="#1.1.4">
+         顾客界面
+        </a>
+       </li>
+       <li>
+        <a href="#1.1.5">
+         服务生界面
+        </a>
+       </li>
+       <li>
+        <a href="#1.1.6">
+         厨师界面
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li>
+      <a href="#1.2">
+       1.2 功能流程描述
+      </a>
+     </li>
+     <li>
+      <a href="#1.3">
+       1.3 初始内置信息
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#2">
+     2.系统结构设计
+    </a>
+   </li>
+   <li>
+    <a href="#3">
+     3.系统详细设计
+    </a>
+    <ul>
+     <li>
+      <a href="#3.1">
+       3.1 类结构设计
+      </a>
+     </li>
+     <li>
+      <a href="#3.2">
+       3.2 系统界面设计
+      </a>
+     </li>
+     <li>
+      <a href="#3.3">
+       3.3 关键设计思路
+      </a>
+      <ul>
+       <li>
+        <a href="#3.3.1">
+         3.3.1 Extern全局变量的使用
+        </a>
+       </li>
+       <li>
+        <a href="#3.3.2">
+         3.3.2  SQlite3数据库的使用
+        </a>
+       </li>
+       <li>
+        <a href="#3.3.3">
+         3.3.3  Timer库类的使用
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#4">
+     4.项目总结
+    </a>
+   </li>
+   <li>
+    <p>
+     <a href="#5">
+      5.相关问题说明
+     </a>
+     <br/>
+    </p>
+    <h1 id="1">
+     1.系统功能设计
+    </h1>
+    <br/>
+    <strong>
+     YRMS餐厅管理系统
+    </strong>
+    旨在实现餐厅管理系统化,使顾客用餐更加方便快捷,同时,实现了,
+    <strong>
+     服务员-厨师-顾客
+    </strong>
+    实时信息沟通,解决
+    <strong>
+     服务员-顾客-厨师
+    </strong>
+    的在现实餐厅中信息交流出错的问题,而且也实现了经理对员工的工作情况查看,以及系统管理员对餐厅信息的管理,从而使得餐厅管理一体化,更加高效的运行。基于数据库的实现,使得整个餐厅的数据可以有效存储下来。
+    <pre><code>**本系统模拟设想了未来的一种用餐模式，即在每一个餐桌上会有一个显示屏，并配备一个机器人服务员，二者共用一个应用程序，有一名顾客入座后，相应的机器人服务员会启动并对该桌顾客服务，同时，所有餐桌启动的程序在厨房都会各有一个显示屏，每个餐桌可登入一名厨师，厨师会接收该桌顾客的订单，与该桌顾客进行信息交流，而该显示屏上登录的厨师也可以与相应的机器人服务员进行信息交流。**
+</code></pre>
+    <p>
+    </p>
+    <h2 id="1.1">
+     1.1总体功能设计
+    </h2>
+    <br/>
+    具体实现的功能罗列如下:
+   </li>
+   <li>
+    <p>
+     <span id="1.1.1">
+      登录界面
+     </span>
+    </p>
+    <ul>
+     <li>
+      不同身份用户登录
+     </li>
+     <li>
+      注册成为顾客
+     </li>
+    </ul>
+   </li>
+   <li>
+    <span id="1.1.2">
+     系统管理员界面
+    </span>
+    <ul>
+     <li>
+      菜单管理(增加、删除、修改)
+     </li>
+     <li>
+      用户信息查看(修改员工信息、增加员工[经理,服务生,厨师])
+      <br/>
+      <strong>
+       此系统不实现员工删除功能，用意将在
+       <a href="#a">
+        下文
+       </a>
+       描述
+      </strong>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <spqn id="1.1.3">
+     经理界面
+     <ul>
+      <li>
+       查看顾客对
+       <strong>
+        所有
+       </strong>
+       服务员和厨师的工作质量，工作效率的评价
+      </li>
+      <li>
+       查看 顾客的评语
+      </li>
+      <li>
+       查看服务员的历史服务次数和厨师的历史做菜数量
+      </li>
+     </ul>
+    </spqn>
+   </li>
+   <li>
+    <span id="1.1.4">
+     顾客界面
+    </span>
+    <ul>
+     <li>
+      选择座位入座
+     </li>
+     <li>
+      查看菜单
+     </li>
+     <li>
+      点菜
+     </li>
+     <li>
+      查看已点菜
+     </li>
+     <li>
+      加菜
+     </li>
+     <li>
+      结账
+     </li>
+     <li>
+      呼叫服务员
+     </li>
+     <li>
+      查看做菜进度
+     </li>
+     <li>
+      查看餐桌剩余情况
+     </li>
+     <li>
+      评价厨师和服务员
+     </li>
+    </ul>
+   </li>
+   <li>
+    <span id="1.1.5">
+     服务生界面
+    </span>
+    <ul>
+     <li>
+      实时接收顾客请求
+     </li>
+     <li>
+      实时接收厨师上菜请求
+     </li>
+     <li>
+      实时统计服务次数
+     </li>
+    </ul>
+   </li>
+   <li>
+    <span id="1.1.6">
+     厨师界面
+    </span>
+    <ul>
+     <li>
+      实时接收顾客order
+     </li>
+     <li>
+      确认做菜
+     </li>
+     <li>
+      确认菜品已完成
+     </li>
+     <li>
+      实时统计做菜数
+      <pre><code>####本系统最主要的功能是实现了多用户系统，即在一次程序启动后，可以登录进入一名服务生，一名厨师，一名顾客，实现顾客，厨师，服务生实时信息沟通。
+</code></pre>
+     </li>
+    </ul>
+   </li>
+  </ul>
+  <p>
+  </p>
+  <h2 id="1.2">
+   1.2功能流程描述
+  </h2>
+  <p>
+   登录主界面如图:
+  </p>
+  <p>
+   <img alt="a" src="/home/mty/DDDCPP/report/reportimages/login.png"/>
+  </p>
+  <p>
+   <strong>
+    登录界面操作流程
+   </strong>
+  </p>
+  <p>
+   <img alt="a" src="/home/mty/DDDCPP/report/reportimages/liuc_login.png"/>
+  </p>
+  <h3 id="_4">
+   模拟标准用餐过程
+  </h3>
+  <p>
+   <br/>
+   <br/>
+   <img alt="a" src="/home/mty/DDDCPP/report/reportimages/liuc_order.png"/>
+  </p>
+  <pre><code>**以上为一次标准的用餐过程,可以体现在本次用餐过程中的所有的实现的功能,当然,在实际使用中不一定会全部体现出.**
+</code></pre>
+  <h4 id="_5">
+   服务员设计
+  </h4>
+  <p>
+   <br/>
+   <br/>
+   <strong>
+    服务生可以实时接收所服务桌号的顾客发送过来的请求,和厨师已做好菜需要上菜的请求,并确认消息.
+   </strong>
+  </p>
+  <h4 id="_6">
+   厨师设计
+  </h4>
+  <p>
+   <br/>
+   <br/>
+   <strong>
+    厨师界面实时刷新显示顾客的已点菜品,并勾选要做的菜品,点击
+    <em>
+     确认选菜
+    </em>
+    可认领已选菜品,做菜完毕后点击
+    <em>
+     做菜完毕
+    </em>
+    即可通知服务员端菜
+   </strong>
+  </p>
+  <h4 id="_7">
+   餐厅经理设计
+  </h4>
+  <p>
+   <br/>
+   <br/>
+   <strong>
+    餐厅经理登录后可选择
+    <em>
+     查询服务员评价
+    </em>
+    或
+    <em>
+     查询厨师评价
+    </em>
+    ,点击后会弹出相应的员工列表,选择一个即可查看本人的工作质量折线图,工作效率折线图,以及历史评价,历史服务(做菜)总数
+   </strong>
+  </p>
+  <h4 id="_8">
+   系统管理员设计
+  </h4>
+  <p>
+   <br/>
+   <br/>
+   <strong>
+    系统管理员界面如图:
+   </strong>
+   <br/>
+   <img alt="a" src="/home/mty/DDDCPP/report/reportimages/sys_ctrol.png"/>
+   <br/>
+   <span id="a">
+    <br/>
+    <strong>
+     可以对在菜单中直接进行菜品的添加修改,若删除则选中菜品点击删除菜品,但每次操作完都要提交菜品更改以保存,可点击查看账号信息以进行对用户账号的管理,其中顾客信息是不可修改的,员工信息可以直接进行修改或选择添加员工信息,但
+     <mark>
+      每次操作后都要提交修改以保存
+     </mark>
+     ,此次不
+     <mark>
+      设计删除员工信息的功能
+     </mark>
+     ,旨在保存历史员工信息,方面餐厅其他的事务管理。
+    </strong>
+   </span>
+   <br/>
+  </p>
+  <h2 id="1.3">
+   1.3初始内置信息说明
+  </h2>
+  <br/>
+  <span id="b">
+   <table>
+    <thead>
+     <tr>
+      <th>
+       用户类型
+      </th>
+      <th>
+       用户账号
+      </th>
+      <th>
+       用户密码
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>
+       系统管理员
+      </td>
+      <td>
+       000001
+      </td>
+      <td>
+       123456
+      </td>
+     </tr>
+     <tr>
+      <td>
+       经理
+      </td>
+      <td>
+       000002
+      </td>
+      <td>
+       123456
+      </td>
+     </tr>
+     <tr>
+      <td>
+       服务生
+      </td>
+      <td>
+       000003
+      </td>
+      <td>
+       123456
+      </td>
+     </tr>
+     <tr>
+      <td>
+       厨师
+      </td>
+      <td>
+       000004
+      </td>
+      <td>
+       123456
+      </td>
+     </tr>
+     <tr>
+      <td>
+       顾客
+      </td>
+      <td>
+       13037958306
+      </td>
+      <td>
+       123456
+      </td>
+     </tr>
+     <tr>
+      <td>
+       顾客
+      </td>
+      <td>
+       18801000859
+      </td>
+      <td>
+       123456
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    <br/>
+   </p>
+   <table>
+    <thead>
+     <tr>
+      <th>
+       餐桌总数
+      </th>
+      <th>
+       初始状态
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>
+       9
+      </td>
+      <td>
+       未使用
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    <br/>
+    <br/>
+    数据库结构
+   </p>
+   <table>
+    <thead>
+     <tr>
+      <th>
+       usrinfo.db
+      </th>
+      <th>
+       dishes.db
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+    </tbody>
+   </table>
+   <p>
+    <br/>
+    <br/>
+    <strong>
+     usrinfo.db
+    </strong>
+    <br/>
+    <img alt="a" src="/home/mty/DDDCPP/report/reportimages/usrinfo_tables.png"/>
+    <br/>
+    <strong>
+     dishes.db
+    </strong>
+    <br/>
+    <img alt="a" src="/home/mty/DDDCPP/report/reportimages/dish_table.png"/>
+    <br/>
+    <a href="#introsqlite">
+     点击查看数据库结构具体说明
+    </a>
+    <br/>
+    <br/>
+    <br/>
+   </p>
+   <h1 id="2">
+    2.系统结构设计
+   </h1>
+   <br/>
+   代码结构图如下:
+   <br/>
+   <img alt="a" src="/home/mty/DDDCPP/report/reportimages/filetree.png"/>
+   <br/>
+   <br/>
+   <br/>
+   <strong>
+    其中,每种用户界面需要的cpp,h,ui文件都存放在相应的文件夹之中,extrah头文件夹和extracpp文件夹存放了系统所需要的额外编写的头文件和cpp文件
+   </strong>
+   <br/>
+   <img alt="a" src="/home/mty/DDDCPP/report/reportimages/treebegin.png"/>
+   <br/>
+   <br/>
+   <br/>
+   <img alt="a" src="/home/mty/DDDCPP/report/reportimages/sourcetree.png"/>
+   <br/>
+   <br/>
+   <pre><code>在**extrah**和**extracpp**文件夹中,extern文件是我声明并定义的一些程序中使用到的全局变量,delegate文件中定义在使用model/view时的一些委托类,yrmssqliter文件中定义一些数据库操作的函数。在使用到的文件中都会引用相应的头文件,其他每一个界面文件都包含一个类,且继承了qdialog类,用作界面显示以及功能实现。
+</code></pre>
+   <p>
+   </p>
+   <h1 id="3">
+    3.系统详细设计
+   </h1>
+   <br/>
+   <h2 id="3.1">
+    3.1类结构设计
+   </h2>
+   <br/>
+   <strong>
+    除extrah外中的头文件外,每个头文件都是一个qdialog类,以实现相应的界面的显示,同时在相应的类的私有成员变量中,声明了要跳转的界面的类的指针,在cpp文件中会实现存储空间的分配。代码举例如下:
+   </strong>
+   <pre><code class="c">//login.h
+namespace Ui {
+class Login;
+}
+
+class Login : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit Login(QWidget *parent = 0);
+    ~Login();
+
+private:
+    Ui::Login *ui;
+    Systemcontroler *syslogin;
+    Chefwindow *cheflogin;
+    Managerwindow *managerlogin;
+    Serverwindow *serverlogin;
+    Logup *logupwindow;
+    Customers *customer;
+    static int progress_value;
+private slots:
+    void logintomain();
+    void on_logup_clicked();
+    void on_exit_clicked();
+};
+
+</code></pre>
+   <p>
+    <strong>
+     在delegate.h文件中声明了model/view模式中需要的spinbox委托类,readonly委托类,combobox委托类,checkbox委托类,代码举例如下:
+    </strong>
+   </p>
+   <pre><code class="c">class SpinBoxDelegate : public QItemDelegate//设置spinbox代理
+{
+    Q_OBJECT
+
+public:
+    SpinBoxDelegate(QObject *parent = 0):QItemDelegate(parent){}
+    //返回一个编辑控件，用来编辑指定项的数据
+    QWidget *createEditor(QWidget *parent,const QStyleOptionViewItem &amp;,const QModelIndex &amp;)const
+    {
+        //返回该QSpinBox控件
+        QSpinBox *editor= new QSpinBox(parent);
+        editor-&gt;setMinimum(0);
+        editor-&gt;setMaximum(50);
+        return editor;
+    }
+    void setEditorData(QWidget *editor,const QModelIndex &amp;index)const
+    {
+
+        //获得当前模式中索引对应的数值
+        int value = index.model()-&gt;data(index , Qt::EditRole).toInt();
+        //强制类型转换
+        QSpinBox *spinbox = static_cast&lt;QSpinBox*&gt;(editor);
+        //设置spinbox的数值
+        spinbox-&gt;setValue(value);
+    }
+    void setModelData(QWidget *editor, QAbstractItemModel *model, const QModelIndex &amp;index)const
+    {
+        QSpinBox *spinbox = static_cast&lt;QSpinBox*&gt;(editor);
+        //interpretText()用于解释spinbox中的文本。
+        spinbox-&gt;interpretText();
+        //获得编辑器中的数值
+        int value = spinbox-&gt;value();
+        model-&gt;setData(index,value,Qt::EditRole);
+    }
+    void updateEditorGeometry(QWidget *editor, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index)const
+    {
+        //根据给定的样式编辑器更新索引对应项
+        editor-&gt;setGeometry(option.rect);
+    }
+};
+</code></pre>
+   <p>
+    <strong>
+     其他三类设计类似,在此不再累赘
+    </strong>
+   </p>
+   <h2 id="3.2">
+    3.2系统界面设计
+   </h2>
+   <p>
+    <strong>
+     系统界面设计采用以ui界面设计为主,代码信号槽实现为辅,界面的跳转都会有相应的部件操作,同时在部分操作中有QMessagebox类窗口提醒。
+    </strong>
+   </p>
+   <h2 id="3.3">
+    3.3关键设计思路
+   </h2>
+   <h3 id="_9">
+    本系统设计的亮点有如下：
+   </h3>
+   <p>
+   </p>
+   <h4 id="3.3.1">
+    1.extern全局变量的使用
+   </h4>
+   <pre><code class="c">class Extern
+{
+public:
+    static int choisen;
+    static QString loginername;
+    static QMap&lt;QString,int&gt; allloginer;
+    static int progress_value;
+    static int loginfocus;
+    static int check_desk_choosen;
+    static int customer_to_server;
+    static QString chefname;
+    static QString servername;
+    static QString managername;
+    static int cur_finished_dish;//本次厨师完成的菜品数
+    static int cur_users;//所有用户数
+    static QString man_chef_num;//经理选中的查看厨师
+    static QString man_ser_num;//经理选中的查看服务生
+    static int cur_server_to_desk;
+    static int server_status;
+    static int ctrl_menu_status;
+};
+
+</code></pre>
+   <pre><code class="c++">int Extern::choisen=0;//临时
+QString Extern::loginername="z";//临时用户名
+QMap&lt;QString,int&gt; Extern::allloginer;
+int Extern::progress_value=0;
+int Extern::loginfocus=0;
+int Extern::check_desk_choosen=0;
+int Extern::customer_to_server=2;
+QString Extern::chefname="z";
+QString Extern::servername="z";
+QString Extern::managername="z";
+int Extern::cur_finished_dish=0;
+int Extern::cur_users=0;
+QString Extern::man_chef_num="z";
+QString Extern::man_ser_num="z";
+int Extern::cur_server_to_desk=0;
+int Extern::server_status=0;//服务员在线状态
+int Extern::ctrl_menu_status=0;
+
+</code></pre>
+   <p>
+    <span id="introsqlite">
+     <br/>
+     <strong>
+      通过声明extern类来保持在
+      <mark>
+       一次程序运行中
+      </mark>
+      需要的状态信息,如本次用餐的顾客信息,经理查看的员工账号等,方便了在程序设计中的数据保持与交流。
+     </strong>
+    </span>
+    <br/>
+   </p>
+   <h4 id="3.3.2">
+    2.sqlitle3数据库的使用
+   </h4>
+   <br/>
+   <strong>
+    所使用的数据库名称即与数据库中的table罗列如下
+   </strong>
+   <table>
+    <thead>
+     <tr>
+      <th>
+       usrinfo.db
+      </th>
+      <th>
+       dish.db
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+    </tbody>
+   </table>
+   <p>
+    <br/>
+    <br/>
+    <strong>
+     usrinfo 中Users表存放用户信息,serverlist中存放所有服务生账号,cheflist中存放所有厨师账号,每一位厨师有一个以”自己账号”命名的表,存放历史做菜数,有一个以”自己账号+c”命名的table存放顾客的所有评价,每一位服务生也有一个以”自己名字命名的表,存放历史服务总数,另一个以”自己账号+c”的表存放顾客对本人的所有评价
+    </strong>
+   </p>
+   <p>
+    <strong>
+     dishes中Deshinfo存放餐桌编号以及餐桌状态,如下图,states=0表示未使用
+    </strong>
+    <br/>
+    <img alt="a" src="/home/mty/DDDCPP/report/reportimages/deskinfo_tables.png"/>
+    <br/>
+    <strong>
+     Dishinfo表存储所有菜品的名称和单价
+    </strong>
+    <br/>
+    <a href="#b">
+     返回查看表的结构
+    </a>
+   </p>
+   <h4 id="3.3.3">
+    3.Timer库的使用
+   </h4>
+   <p>
+    <strong>
+     使用Timer类库,可以实现对界面的实时刷新,实现顾客-服务生-初始实时通讯,代码举例如下
+    </strong>
+   </p>
+   <pre><code class="c">//chefwindow.cpp
+    timer=new QTimer(this);
+    timer-&gt;setInterval(100);
+    timer-&gt;start();
+    connect(timer,SIGNAL(timeout()),this,SLOT(fresh()));
+</code></pre>
+   <p>
+    <strong>
+     这段代码可以实现界面每隔0.1秒刷新一次.
+    </strong>
+   </p>
+   <p>
+    <strong>
+     通过以上方法,实现了实时的三角信息交流
+    </strong>
+   </p>
+   <p>
+    <img alt="a" src="/home/mty/DDDCPP/report/reportimages/triger.png"/>
+   </p>
+   <h1 id="4">
+    4.项目总结
+   </h1>
+   <p>
+    <strong>
+     自己感觉qt的上手还是需要一个比较长的过程,需要在实践中慢慢理解,比如窗口的类实现,不同窗口类之间的区别,不同model类的继承关系等,在熟悉后做做起来就会很快,同时熟练掌握几种库类的使用,在很多地方就可以多次利用了。本次大作业收获很多,很好地巩固了c++的基础知识,对面向对象设计有了更深的体会,对一个软件项目的实施也有了基本的认识,我认为这次作业最大的收获,就是极大的提高了自学的能力,大作业的完成很大一部分都是边自学边实践,在实践中熟悉,并一次次修改大作业中不满意的地方,直到做到自己认为比较完美。我希望这只是一个开始,以后会自学更多的东西,并多锻炼自己文字表达的能力,以更好的提高自己的技术。
+    </strong>
+   </p>
+   <h1 id="5">
+    5.相关问题说明
+   </h1>
+   <p>
+    <strong>
+     由于我是使用Ubuntu16.04的系统，在软件安装过程中比较方便，没有遇到很多在window中出现的问题，整个数据库操作也方便很多，节省了不少时间。
+    </strong>
+   </p>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js">
+   </script>
+   <script>
+    hljs.initHighlightingOnLoad();
+   </script>
+   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+   </script>
+   <script type="text/javascript">
+    MathJax.Hub.Config({"showProcessingMessages" : false,"messageStyle" : "none","tex2jax": { inlineMath: [ [ "$", "$" ] ] }});
+   </script>
+  </span>
+ </body>
+</html>
